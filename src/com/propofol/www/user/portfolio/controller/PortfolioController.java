@@ -574,7 +574,7 @@ public class PortfolioController {
 		return moveURL;
 	} // addExperience
 	
-	@RequestMapping(value="/portfolio/experienceModify.do", method=GET)
+	@RequestMapping(value="/portfolio/experienceModify.do", method=POST)
 	public String modifyExperience(ExperienceVO exp_vo, HttpSession session) {
 		String user_id = (String) session.getAttribute("user_id");
 		
